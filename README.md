@@ -1,2 +1,2 @@
 # MaguttiBuilders
-Query Helpers for laravel
+A simple Query Helpers extension for Laravel
