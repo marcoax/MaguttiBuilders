@@ -1,7 +1,5 @@
 <?php
 namespace magutti\MaguttiBuilders\Builders;
-
-
 use Illuminate\Database\Eloquent\Builder;
 
 /**
@@ -18,9 +16,9 @@ class LaraCmsBuilder extends Builder
         return $this->status(1);
     }
     public  function inactive(){
-        return $this->where('is_active','!=',1)->orWhereNull('is_active');
+        return $this->where(config('magutti_builder.status_field'),'!=',1)->orWhereNull(config('magutti_builder.status_field'));
     }
     public function published() {
-        return $this->where('pub', 1);
+        return $this->where(config('magutti_builder.publish_field'), 1);
     }
 }
