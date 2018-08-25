@@ -10,8 +10,9 @@ use Illuminate\Database\Eloquent\Builder;
  */
 class LaraCmsBuilder extends Builder
 {
+
     public  function status($status){
-        return $this->where('is_active',$status);
+        return $this->where(config('magutti_builder.status_field'),$status);
     }
     public  function active(){
         return $this->status(1);
