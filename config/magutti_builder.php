@@ -2,5 +2,6 @@
 
 return [
     'status_field' => 'is_active',
-    'publish' => 'pub',
+    'publish_field' => 'pub',
+    'parent_field' => 'parent_id',
 ];
