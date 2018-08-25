@@ -1,7 +1,7 @@
 {
     "name": "magutti/magutti-builders",
     "description": "Query Builder Helpers",
-    "homepage": "https://github.com/marcoax/MaguttiBuilders",
+    "homepage": "https://packagist.org/packages/magutti/magutti-builders",
     "license": "MIT",
     "type": "library",
     "authors": [
