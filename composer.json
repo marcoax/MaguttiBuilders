@@ -1,0 +1,34 @@
+{
+    "name": "magutti/magutti-builders",
+    "description": "Query Builder Helpers",
+    "homepage": "https://github.com/marcoax/MaguttiBuilders",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "marco asperti",
+            "email": "marcoasperti@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "illuminate/support": "5.6.*",
+        "monolog/monolog": "1.23.*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "magutti\\MaguttiBuilders\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "magutti\\MaguttiBuilders\\BuildersServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "magutti\\MaguttiBuilders\\BuildersFacade"
+            }
+        }
+    }
+}
