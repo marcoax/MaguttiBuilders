@@ -10,6 +10,10 @@ namespace magutti\MaguttiBuilders;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class BuildersServiceProvider
+ * @package magutti\MaguttiBuilders
+ */
 class BuildersServiceProvider extends ServiceProvider
 {
     public function boot()
