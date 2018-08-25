@@ -20,7 +20,7 @@ class ArticleBuilder extends LaraCmsBuilder
      * @return ArticleBuilder
      */
     public function childrenMenu($id) {
-        return $this->where('parent_id', $id)->where('top_menu', 1)->orderBy('sort', 'asc');
+        return $this->where(config('magutti_builder.parent_field'), $id)->where('top_menu', 1)->orderBy('sort', 'asc');
     }
 
     /**
