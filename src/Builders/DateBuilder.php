@@ -13,7 +13,7 @@ class CateBuilders extends LaraCmsBuilder
      * @return mixed
      */
     public  function month(){
-        return $this->whereMonth('created_at',Carbon::today()->toDateString());
+        return $this->whereMonth('created_at',12);
     }
 
     /**
@@ -24,6 +24,8 @@ class CateBuilders extends LaraCmsBuilder
     }
 
     public function date() {
-        return $this->whereDate('created_at', '2017-04-26 17:33:21')->first();
+        return $this->whereDate('created_at', '2017-04-26 17:33:21');
     }
+
+
 }
