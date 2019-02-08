@@ -7,7 +7,7 @@ use Carbon\Carbon;
  * Class UserBuilder
  * @package App\maguttiCms\Builders
  */
-class CateBuilders extends LaraCmsBuilder
+class DateBuilders extends LaraCmsBuilder
 {
     /**
      * @return mixed
