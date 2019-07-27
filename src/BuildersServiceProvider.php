@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Marco Asperti
  * Date: 24/08/2018
- * Time: 15:58
+ * Time: 15:58.
  */
 
 namespace magutti\MaguttiBuilders;
@@ -11,8 +11,7 @@ namespace magutti\MaguttiBuilders;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class BuildersServiceProvider
- * @package magutti\MaguttiBuilders
+ * Class BuildersServiceProvider.
  */
 class BuildersServiceProvider extends ServiceProvider
 {
@@ -26,7 +25,7 @@ class BuildersServiceProvider extends ServiceProvider
     /**
      * Make config publishment optional by merging the config from the package.
      *
-     * @return  void
+     * @return void
      */
     public function register()
     {
