@@ -1,24 +1,31 @@
 <?php
+
 namespace magutti\MaguttiBuilders\Builders;
+
 use Illuminate\Database\Eloquent\Builder;
 
 /**
- * Class LaraCmsBuilder
- * @package App\maguttiCms\Builders
+ * Class LaraCmsBuilder.
  */
 class LaraCmsBuilder extends Builder
 {
-
-    public  function status($status){
-        return $this->where(config('magutti_builder.status_field'),$status);
+    public function status($status)
+    {
+        return $this->where(config('magutti_builder.status_field'), $status);
     }
-    public  function active(){
+
+    public function active()
+    {
         return $this->status(1);
     }
-    public  function inactive(){
-        return $this->where(config('magutti_builder.status_field'),'!=',1)->orWhereNull(config('magutti_builder.status_field'));
+
+    public function inactive()
+    {
+        return $this->where(config('magutti_builder.status_field'), '!=', 1)->orWhereNull(config('magutti_builder.status_field'));
     }
-    public function published() {
+
+    public function published()
+    {
         return $this->where(config('magutti_builder.publish_field'), 1);
     }
 }
