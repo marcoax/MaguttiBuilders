@@ -3,3 +3,4 @@
 /.idea/php.xml
 *.xml
 /vendor/*
+vendor
