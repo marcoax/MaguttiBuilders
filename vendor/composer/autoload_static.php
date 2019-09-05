@@ -25,13 +25,8 @@ class ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
-            'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
-        ),
-        'M' => 
-        array (
-            'Monolog\\' => 8,
         ),
         'I' => 
         array (
@@ -41,6 +36,10 @@ class ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 26,
+        ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
         ),
     );
 
@@ -65,10 +64,6 @@ class ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -76,10 +71,6 @@ class ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
-        ),
-        'Monolog\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -93,10 +84,10 @@ class ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -104,7 +95,6 @@ class ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitdf1c2357aafa9901e5f87644b46eb94e::$fallbackDirsPsr4;
 
         }, null, ClassLoader::class);
     }
