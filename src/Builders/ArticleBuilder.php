@@ -2,7 +2,7 @@
 
 namespace magutti\MaguttiBuilders\Builders;
 
-class ArticleBuilder extends LaraCmsBuilder
+class ArticleBuilder extends MaguttiBuilder
 {
     /**
      * @return mixed

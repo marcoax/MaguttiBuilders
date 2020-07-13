@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * Class LaraCmsBuilder.
  */
-class LaraCmsBuilder extends Builder
+class MaguttiBuilder extends Builder
 {
     public function status($status)
     {

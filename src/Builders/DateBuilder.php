@@ -7,7 +7,7 @@ use Carbon\Carbon;
 /**
  * Class UserBuilder.
  */
-class DateBuilder extends LaraCmsBuilder
+class DateBuilder extends MaguttiBuilder
 {
     /**
      * @return mixed
