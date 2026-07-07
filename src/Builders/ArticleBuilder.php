@@ -17,8 +17,6 @@ class ArticleBuilder extends MaguttiBuilder
     }
 
     /**
-     * @param $id
-     *
      * @return ArticleBuilder
      */
     public function childrenMenu($id)
@@ -27,8 +25,7 @@ class ArticleBuilder extends MaguttiBuilder
     }
 
     /**
-     * @param string $id
-     *
+     * @param  string  $id
      * @return ArticleBuilder
      */
     public function pageChildren($id = '')
